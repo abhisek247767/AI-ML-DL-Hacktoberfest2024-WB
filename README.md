@@ -21,7 +21,7 @@ This repository is encourage people to contribute to open source throughout octo
 * Then Fork this Repo
 * Add your contribution
 * Create new PR/MR
-* Repeated codes will not be merged.
+* Repeated Algorithms will not be merged.
 * The quality of pull requests is paramount,quantity comes second.
 
 ## Note

@@ -28,4 +28,4 @@ This repository is encourage people to contribute to open source throughout octo
 * Deadline is 31st October for Hacktoberfest but my repository always open for all.
 * I will personally check each code and Try to write your own words 🙂
 
-# Hurrah !! You have done yur first contribution ✔️
+# Hurrah !! You have done your first contribution ✔️

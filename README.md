@@ -1,5 +1,6 @@
 # Hacktoberfest_2022
 This repository is encourage people to contribute to open source throughout october.Follow me on Github🙊
+
 ![hack](https://user-images.githubusercontent.com/69287212/196059967-10a30315-d16d-4d70-8872-8878d9feeb02.PNG)
 
 # Rules To earn your Hacktoberfest reward.
@@ -11,7 +12,7 @@ This repository is encourage people to contribute to open source throughout octo
 # Your work:
 
 1.you have to just write your own word any of the machine Learning algorithm which is not there prevously.And give some real life application for better understandiing purpose.
-2.secondly Anything which is realted To Machine Learning related but should be appropiate.
+* secondly Anything which is realted To Machine Learning related but should be appropiate.
 3.Word limit minimum-100 to maximum 1000
 
 # Steps to Contribute to this Repo

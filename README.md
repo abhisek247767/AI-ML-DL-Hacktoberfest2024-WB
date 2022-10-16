@@ -11,7 +11,7 @@ This repository is encourage people to contribute to open source throughout octo
 
 ## Your work:
 
-* you have to just write your own word any of the machine Learning algorithm which is not there prevously.And give some real life application for better understandiing purpose.
+* First priority you have to just write your own word any of the machine Learning algorithm which is not there prevously.And give some real life application for better understandiing purpose.
 * secondly Anything which is realted To Machine Learning related but should be appropiate.
 * Word limit minimum-100 to maximum 1000
 

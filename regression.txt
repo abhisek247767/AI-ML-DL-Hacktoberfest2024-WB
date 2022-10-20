@@ -1,0 +1,8 @@
+Regression analysis is a statistical method to model the relationship between a dependent (target) and independent (predictor) variables with one or more independent 
+variables. More specifically, Regression analysis helps us to understand how the value of the dependent variable is changing corresponding to an independent variable 
+when other independent variables are held fixed. It predicts continuous/real values such as temperature, age, salary, price, etc.
+
+We can understand the concept of regression analysis using the below example:
+
+Example: Suppose there is a marketing company A, who does various advertisement every year and get sales on that.
+The below list shows the advertisement made by the company in the last 5 years and the corresponding sales:

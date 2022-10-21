@@ -1,0 +1,22 @@
+Reinforcement Learning
+Reinforcement Learning is defined as a Machine Learning method that is concerned with how software agents should take actions in an environment.
+It is a part of the deep learning method that helps you to maximize some portion of the cumulative reward.
+Discussing below the main elements of RL
+Agent — 
+the learner and the decision maker.
+Environment — 
+where the agent learns and decides what actions to perform.
+Action — 
+a set of actions which the agent can perform.
+State — 
+the state of the agent in the environment.
+Reward — 
+for each action selected by the agent the environment provides a reward. Usually a scalar value.
+Policy — 
+the decision-making function (control strategy) of the agent, which represents a mapping from situations to actions.
+Value function — 
+mapping from states to real numbers, where the value of a state represents the long-term reward achieved starting from that state, and executing a particular policy.
+Function approximator — 
+refers to the problem of inducing a function from training examples. Standard approximators include decision trees, neural networks, and nearest-neighbor methods
+Model — 
+The agent’s view of the environment, which maps state-action pairs to probability distributions over states. Note that not every reinforcement learning agent uses a model of its environment

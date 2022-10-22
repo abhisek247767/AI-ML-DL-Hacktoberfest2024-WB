@@ -1,0 +1,1 @@
+This folder contains a doc file describing Random Forest Algorithm.

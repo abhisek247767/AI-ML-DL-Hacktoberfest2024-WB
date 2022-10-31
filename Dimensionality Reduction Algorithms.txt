@@ -1,0 +1,18 @@
+Dimensionality Reduction Algorithms
+In today's world, vast amounts of data are being stored and analyzed by corporates, government agencies, and research organizations. 
+As a data scientist, you know that this raw data contains a lot of information - the challenge is to identify significant patterns and variables.
+
+Dimensionality reduction algorithms like Decision Tree, Factor Analysis, Missing Value Ratio, and Random Forest can help you find relevant details.
+Dimensionality reduction refers to techniques for reducing the number of input variables in training data. When dealing with high dimensional data, 
+it is often useful to reduce the dimensionality by projecting the data to a lower
+dimensional subspace which captures the “essence” of the data.
+
+Dimensionality Reduction Techniques:-
+   Feature selection. 
+   Feature extraction. 
+   Principal Component Analysis (PCA) 
+   Non-negative matrix factorization (NMF) 
+   Linear discriminant analysis (LDA) 
+   Generalized discriminant analysis (GDA) 
+   Missing Values Ratio. 
+    Low Variance Filter.

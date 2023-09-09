@@ -18,7 +18,7 @@ This repository is encourage people to contribute to open source throughout octo
 
 ## Steps To Contribute To This Repo
 
-* First Star this Repo (Important)
+* First follow me in github and Star this Repo (Important)
 * Then Fork this Repo
 * Add your contribution
 * Create new PR/MR

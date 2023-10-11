@@ -1,0 +1,34 @@
+Convolutional Neural Networks (CNNs):
+
+CNNs are inspired by the human visual system, which processes visual information in a hierarchical manner. A CNN comprises three main types of layers: convolutional layers, pooling layers, and fully connected layers. These layers work together to extract features from the input data and make predictions.
+
+Convolutional Layers:
+
+Convolutional layers are the core building blocks of CNNs. They apply convolution operations to the input data, which involves sliding a small filter (also known as a kernel) over the input to extract local features.
+
+The output of a convolutional layer is referred to as a feature map. The size of the feature map is determined by parameters such as the size of the input, the size of the filter, and the stride (the step size when sliding the filter).
+
+The formula for the size of the feature map (output volume) is given by:
+
+Output size = [(Input size - Filter size + 2 * Padding) / Stride] + 1
+
+Pooling Layers:
+
+Pooling layers reduce the spatial dimensions of the feature maps while retaining essential information. Common pooling operations include max pooling and average pooling.
+The pooling layer also uses a filter, known as a pooling window, to slide over the input feature map. It selects the maximum (max pooling) or the average (average pooling) value within each window.
+Pooling helps to make the network translation-invariant and computationally efficient.
+The formula for the size of the output feature map after pooling is similar to the one for convolutional layers.
+Fully Connected Layers:
+
+Fully connected layers are used for high-level feature extraction and decision-making. They connect all neurons in one layer to all neurons in the next layer, just like a traditional neural network.
+
+These layers are often used in the final stages of a CNN for tasks like image classification.
+
+The formula for the output of a fully connected layer is a linear combination of the inputs, followed by an activation function:
+
+Output = Activation(W * Input + b)
+
+Activation Functions:
+
+Activation functions introduce non-linearity into the model, allowing it to capture complex relationships in the data. Common activation functions include ReLU (Rectified Linear Unit), Sigmoid, and Tanh.
+The strength of CNNs lies in their ability to automatically learn features from data, eliminating the need for manual feature engineering. The hierarchical nature of CNNs allows them to recognize features at various levels of abstraction, from simple edges to complex object parts. This makes CNNs powerful tools for tasks involving images, audio, and more.

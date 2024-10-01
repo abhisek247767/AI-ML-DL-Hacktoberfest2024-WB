@@ -161,3 +161,11 @@ int main() {
 
     return 0;
 }
+// ====================================
+// Explanation of Code:
+
+// Dataset: The dataset consists of weather data where each sample has a class label ("Yes" or "No") and a set of features 
+// (e.g., Outlook, Temperature).
+// Gini Impurity Calculation: We calculate Gini impurity to measure the quality of splits.
+// Decision Tree Building: The tree is built recursively, splitting on the feature that gives the best split at each level.
+// Classification: The new sample is classified by traversing the tree based on its feature values.

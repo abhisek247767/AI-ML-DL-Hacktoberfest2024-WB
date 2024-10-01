@@ -1,0 +1,37 @@
+Explanation:
+
+A Decision Tree is a supervised learning algorithm used for both classification and regression tasks. 
+It models decisions and their possible consequences as a tree-like structure, where:
+
+Internal nodes represent decision points based on a feature.
+Branches represent the outcome of those decisions.
+Leaf nodes represent the final prediction (class labels in classification or numerical values in regression).
+The algorithm splits the data recursively based on the feature that provides the highest information gain or the lowest Gini impurity. 
+The goal is to create a model that predicts the value of a target variable based on input features.
+
+Key Concepts:
+Information Gain: Measures the reduction in entropy after splitting the dataset on a feature.
+Gini Impurity: Measures how often a randomly chosen element would be incorrectly classified. The lower the Gini value, the better 
+the split.
+
+Advantages:
+Easy to understand and visualize.
+Requires minimal data preprocessing (no normalization or scaling).
+Can handle both categorical and numerical data.
+
+Disadvantages:
+Prone to overfitting, especially with deep trees.
+Sensitive to small changes in data (can result in different trees).
+====================================================================================
+Real-Life Applications of Decision Trees:
+
+Credit Scoring: Decision Trees are used in banks to evaluate if a person is eligible for a loan. 
+By analyzing a customer’s past financial data, income, and other factors, a tree can predict the probability of the 
+customer defaulting on the loan.
+
+Medical Diagnosis: In healthcare, decision trees help diagnose diseases. 
+For example, based on symptoms such as age, blood pressure, and test results, a decision tree can predict whether a 
+patient is likely to have a certain disease.
+
+Fraud Detection: In finance, decision trees are used to classify whether a transaction is fraudulent by analyzing features 
+such as transaction amount, location, and frequency.

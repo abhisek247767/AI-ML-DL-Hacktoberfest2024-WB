@@ -1,0 +1,17 @@
+name: Trigger Jenkins Job
+
+on:
+  workflow_dispatch:
+    
+jobs:
+  trigger:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Jenkins Job
+        uses: appleboy/jenkins-action@master
+        with:
+          url: ${{ secrets.URL }}
+          user: ${{ secrets.USER }}
+          token: ${{ secrets.TOKEN }}
+          job: ${{ secrets.JOBS }}

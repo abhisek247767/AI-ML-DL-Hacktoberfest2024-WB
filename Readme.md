@@ -1,21 +1,43 @@
-# Hand-Controlled Screenshot Project
+# Hacktoberfest_2024
+This repository is encourage people to contribute to open source throughout october.Follow me on Github🙊
 
-## Description
-This project utilizes OpenCV and MediaPipe to allow users to capture screenshots using hand gestures. By recognizing specific hand positions, users can take screenshots of their screens without needing to use a mouse or keyboard.
 
-## Features
-- **Hand Gesture Recognition:** Detects hand landmarks to recognize gestures for taking screenshots.
-- **Screenshot Functionality:** Captures the current screen and saves it in a designated folder.
-- **User Feedback:** Provides visual notifications to inform users about the status of the screenshot process.
+![image](https://github.com/user-attachments/assets/87d213ea-935b-4484-ac3d-8fcc13a53cf6)
 
-## Requirements
-- Python 3.x
-- OpenCV
-- NumPy
-- PyAutoGUI
-- MediaPipe
 
-You can install the required packages using pip:
+## Rules To earn your Hacktoberfest reward.
 
-```bash
-pip install opencv-python numpy pyautogui mediapipe
+* You must register and make four valid pull requests (PRs) between October 1-31 (in any time zone).
+* PRs can be made to any public repo on GitHub, only the ones with issues labeled Hacktoberfest.
+* If a maintainer reports your pull request as spam or behavior not in line with the project’s code of conduct, you will be ineligible to participate.
+
+## Your Work:
+
+* My First priority you have to just write your own word any of the machine Learning algorithm which is not there prevously.And give some real life application for better understandiing purpose.
+* Otherwise Anything which is realted To Machine Learning related but should be appropiate.
+* Word limit minimum-100 to maximum 1000
+* if possible write the blog on .md format.it's looks bettter.
+
+## Steps To Contribute To This Repo
+
+* First follow me in github and Star this Repo (Important)
+* Then Fork this Repo
+* Add your contribution
+* Create new PR/MR
+* Repeated Algorithms will not be merged.
+* The quality of pull requests is paramount,quantity comes second.
+
+## Notes
+* Deadline is 31st October for Hacktoberfest but my repository always open for alltime.
+* I will personally check each Pull Request and Try to write your own words 🙂
+
+## + Follow Me :) Quick Approval of Pull Request
+To get approval of the pull request much quicker and faster (Follow Me)🚀
+
+## Contributors to this Repository
+
+Thanks to my wonderful contributors💖
+
+[![Contributors](https://contrib.rocks/image?repo=abhisek247767/AI-ML-DL-Hacktoberfest2024-WB)](https://github.com/abhisek247767/AI-ML-DL-Hacktoberfest2024-WB/graphs/contributors)
+
+# Hurrah !! You have done your first contribution ✔️

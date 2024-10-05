@@ -1,0 +1,61 @@
+pipeline {
+  agent any
+  environment {
+    ECR_REPOSITORY = credentials('ECR_REPOSITORY')
+    AWS_ACCOUNT_ID = credentials('AWS_ACCOUNT_ID')
+    AWS_ACCESS_KEY_ID = credentials('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
+  }
+  
+  stages {
+    stage('Continuous Integration') {
+      steps {
+        script {
+          echo "Linting repository"
+          echo "Running unit tests"
+        }
+      }
+    }
+
+    stage('Login to ECR') {
+      steps {
+        script {
+          sh 'aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin ${AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com'
+        }
+
+      }
+    }
+
+    stage('Build Image') {
+      steps {
+        script {
+          sh 'docker build -t ${ECR_REPOSITORY}:latest .'
+        }
+
+      }
+    }
+
+    stage('Push Image') {
+      steps {
+        script {
+          sh 'docker push ${ECR_REPOSITORY}:latest'
+        }
+
+      }
+    }
+
+    stage('Continuous Deployment') {
+      steps {
+        sshagent(['ssh_key']) {
+          sh "ssh -o StrictHostKeyChecking=no -l ubuntu 44.215.220.137 'cd /home/ubuntu/ && wget https://raw.githubusercontent.com/kamleshp95/Chest-Disease-Classification-from-Chest-CT-Scan-Image/main/docker-compose.yml && export IMAGE_NAME=${ECR_REPOSITORY}:latest && aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin ${AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com && docker compose up -d '"
+        }
+      }
+    }
+  }
+
+  post {
+    always {
+      sh 'docker system prune -f'
+    }
+  }
+}

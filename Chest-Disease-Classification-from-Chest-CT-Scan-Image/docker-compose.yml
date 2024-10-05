@@ -1,0 +1,6 @@
+version: '3'
+services:
+  application:
+    image: "${IMAGE_NAME}"
+    ports:
+      - "8080:8080"

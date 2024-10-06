@@ -38,6 +38,6 @@ To get approval of the pull request much quicker and faster (Follow Me)🚀
 
 Thanks to my wonderful contributors💖
 
-[![Contributors](https://contrib.rocks/image?repo=abhisek247767/AI-ML-DL-Hacktoberfest2024-WB)](https://github.com/abhisek247767/AI-ML-DL-Hacktoberfest2024-WB/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=abhisek247767/AI-ML-DL-Hacktoberfest2024-WB&cacheBuster=123)](https://github.com/abhisek247767/AI-ML-DL-Hacktoberfest2024-WB/graphs/contributors)
 
 # Hurrah !! You have done your first contribution ✔️

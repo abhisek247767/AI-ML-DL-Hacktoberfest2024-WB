@@ -1,0 +1,6 @@
+stroke -> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3006180/
+thalassemia -> https://mayoclinic.org/diseases-conditions/thalassemia/symptoms-causes/syc-20354995
+fibroids -> https://my.clevelandclinic.org/health/diseases/9130-uterine-fibroids
+fibromyalgia -> https://www.healthline.com/health/womens-health-fibromyalgia
+autism spectrum disorder -> https://www.cdc.gov/ncbddd/autism/facts.html
+basal cell carcinoma -> https://www.ncbi.nlm.nih.gov/books/NBK482439/#:~:text=Over%20the%20last%2030%20years,occurs%20primarily%20in%20immunocompromised%20patients.

@@ -1,0 +1,6 @@
+2024-04-26 12:03:43.144 [error] Error: Error mutex already exists
+    at dt.W (C:\Users\verma\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\code\electron-main\main.js:110:68581)
+2024-04-26 12:03:43.145 [info] update#setState idle
+2024-04-26 12:04:13.104 [info] update#setState checking for updates
+2024-04-26 12:04:13.257 [info] update#setState idle
+2024-04-26 12:04:34.160 [info] Extension host with pid 16544 exited with code: 0, signal: unknown.

@@ -1,0 +1,5 @@
+2024-04-26 12:03:44.759 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/C:/Users/verma/Desktop/github upload/BTP-Project/notebook_filename.ipynb","scheme":"file"},"type":1,"exists":false}],"filesToDiff":[],"filesToMerge":[]}
+2024-04-26 12:03:45.568 [info] Started local extension host with pid 16544.
+2024-04-26 12:03:45.628 [info] Started initializing default profile extensions in extensions installation folder. file:///c%3A/Users/verma/Desktop/github%20upload/BTP-Project/your_extension_dir
+2024-04-26 12:03:45.902 [info] Completed initializing default profile extensions in extensions installation folder. file:///c%3A/Users/verma/Desktop/github%20upload/BTP-Project/your_extension_dir
+2024-04-26 12:03:49.306 [info] [perf] Render performance baseline is 146ms

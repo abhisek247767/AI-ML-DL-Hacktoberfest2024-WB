@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+    min-width: 300px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-font-smoothing: antialiased;
+}
+
+button:focus{
+    outline: none;
+}
+
+.page-ath-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-ath-content {
+    background: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 40px;
+}
+
+.page-ath-heading {
+    font-size: 28px;
+    font-weight: 700;
+    color: #231f20;
+    padding-bottom: 40px;
+}
+
+
+.page-ath-form,
+.page-ath-header,
+.page-ath-footer,
+.page-ath-text {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-ath-form {
+    padding: 2rem;
+    padding-bottom: 8rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    min-height: 500px;
+}
+
+.page-ath-header {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.page-ath-footer {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 40px;
+}
+.page-ath-footer p{
+    font-size: 15px;
+}
+.page-ath-footer p a{
+    display: inline-block;
+    margin-left: 3px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.page-ath-footer p a:hover{
+    color: #5161ce;
+}
+.page-content {
+    margin-left: 260px;
+    transition: all .5s;
+    padding: 15px;
+}
+.page-content.page-active{
+    margin-left: 0px;
+}
+.title-name{
+    font-size: 1.8rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    background-color: #1c2b8f;
+    color: transparent;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.465);
+    -webkit-background-clip: text;
+        -moz-background-clip: text;
+            background-clip: text;
+}
+
+/*---------signup-step-------------*/
+.register-form-content{
+    justify-content: center;
+}
+.register-form-content .page-ath-form{
+    padding-bottom: 0px;
+}
+.register-form-content .form-align-box,
+.register-form-content .page-ath-form,
+.register-form-content .wizard,
+.register-form-content .register-wizard-box,
+.register-form-content .tab-content,
+.register-form-content .wizard .tab-pane{
+    height: 100%;
+}
+.register-form-content .page-ath-header{
+    display: none;
+}
+.register-wizard-box .tab-pane h4{
+    margin-top: 0px;
+    font-size: 18px;
+    color: #8e8c8c;
+    margin-bottom: 12px;
+}
+.register-wizard-box .tab-pane h3{
+    font-size: 26px;
+    font-weight: 700;
+    color: #231f20;
+    padding-bottom: 25px;
+}
+
+.wizard {
+    position: relative;
+}
+.wizard .nav-tabs {
+    position: relative;
+    margin-bottom: 0;
+    border-bottom-color: transparent;
+}
+
+.wizard > div.wizard-inner {
+    position: absolute;
+    bottom: 20px;
+    display: none;
+}
+
+.wizard .nav-tabs > li > a.active .round-tab, 
+.wizard .nav-tabs > li > a.active:hover .round-tab, 
+.wizard .nav-tabs > li > a.active:focus .round-tab{
+    cursor: default;
+    background-color: #5161ce;
+    color: #fff;
+}
+
+.wizard li.active span.round-tab {
+    background: #0db02b;
+    color: #fff;
+    border-color: #0db02b;
+}
+.wizard li.active span.round-tab i{
+    color: #5bc0de;
+}
+.wizard .nav-tabs > li.active > a i{
+    color: #0db02b;
+}
+
+.wizard .nav-tabs > li a {
+    padding: 15px;
+    position: relative;
+}
+
+.wizard .nav-tabs > li{
+    width: 25%;
+    position: relative;
+}
+
+.wizard .nav-tabs > li a .round-tab{
+    width: 30px;
+    height: 30px;
+    color: #868cbd;
+    font-weight: 600;
+    background-color: #ced2f2;
+    display: inline-block;
+    border-radius: 50%;
+    padding-top: 6px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    transition: 0.5s;
+}
+
+.wizard .nav-tabs > li:before,
+.wizard .nav-tabs > li:after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    background-color: #ced2f2;
+    left: 15px;
+    transition: 0.5s;
+}
+.wizard .nav-tabs > li:after{
+    background-color: #42b161;
+    width: 0;    
+}
+
+.wizard .nav-tabs > li.done a .round-tab {
+    background-color: #42b161;
+    color: #fff;
+}
+
+.wizard .nav-tabs > li.done:after{
+    width: 100%;
+}
+
+.wizard .nav-tabs > li.done.active a .round-tab{
+    background-color: #5161ce;
+    color: #fff;
+}
+
+.wizard .nav-tabs > li.done.active ~ li .round-tab {
+    background: #ced2f2;
+    color: #868cbd;
+}
+
+.wizard .nav-tabs > li.active:after, 
+.wizard .nav-tabs > li.active~li:after{
+    width: 0;
+}
+
+
+.wizard .nav-tabs > li:last-child:before,
+.wizard .nav-tabs > li:last-child:after{
+    display: none;
+}
+
+.wizard .nav-tabs > li a.disabled{
+    cursor: not-allowed;
+}
+.wizard .nav-tabs > li a i{
+    position: absolute;
+    top: -15px;
+    font-style: normal;
+    font-weight: 400;
+    white-space: nowrap;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+}
+
+
+
+.wizard .tab-content>.active{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.wizard .tab-pane {
+    position: relative;
+    padding-top: 1rem;
+}
+.step-btn{
+    background-color: transparent;
+}
+.step-btn i{
+    width: 40px;
+    height: 40px;
+    background-color: #e9e9ea;
+    display: inline-block;
+    border-radius: 50%;
+    color: #5e666b;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 12px;
+}
+.step-btn span{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    color: #5e666b;
+    letter-spacing: 0.3px;
+}
+.wizard h3 {
+    margin-top: 0;
+}
+.prev-step,
+.next-step{
+    border: none;
+    margin-top: 10px;
+}
+.prev-step span{
+    margin-left: 10px;
+}
+.next-step span{
+    margin-right: 10px;
+    color: #5161ce;
+}
+.next-step i {
+        box-shadow: 0px 4px 12px rgba(81, 97, 206, 0.5);
+    background-color: #5161ce;
+    color: #fff;
+}
+
+.form-input-steps .form-group {
+    margin-bottom: 1.5rem;
+}
+.form-input-steps .form-group label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.form-input-steps .custom-control.custom-checkbox label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.form-input-steps .custom-control.custom-checkbox label a{
+    display: inline-block;
+    margin-left: 3px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: underline;
+    
+}
+.form-input-steps .custom-control.custom-checkbox label a:hover{
+    color: #5161ce;
+}
+
+.form-control {
+    height: auto;
+    padding: 16px 18px;
+    border-radius: 13px;
+    font-weight: 400;
+    color: #333;
+    border-color: #e4e4e4;
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.progress{
+  border-radius: 50px;
+  font-weight: 800;
+}
+.progress-bar{
+  background-color: #5161ce;
+}
+.chatbox {
+    padding: 1rem 0;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+}
+.chatbox img {
+    width: 80px;
+}
+.chatbox .cbot-name{
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+}
+.chatbox .chatboxContent {
+    padding: 1rem;
+    border-radius: 10px;
+    background: #eff1fb;
+    color: #1d2b72;
+}
+
+.prompts {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.prompts .btn-cust{
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background: #eff1fb;
+    color: #1d2b72;
+    border: 1px solid #a6b4fa;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.prompts .btn-cust:hover{
+    background: #1d2b72;
+    color: #fff;
+    border: 1px solid #1d2b72;
+}

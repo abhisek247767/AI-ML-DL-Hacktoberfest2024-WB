@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='bticon.png') }}">
+    <title>Ayush Health-Bot</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="page-ath-wrap">
+                    <div class="page-ath-content register-form-content">
+                        <div class="page-ath-form">
+                            <div class="form-align-box">
+                                <div class="wizard">
+                                  <h4 class="title-name">Ayush Health-Bot</h4>
+                                  <div class="progress" style="height: 30px;">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" style="width: 25%;">
+                                          Step 1 of 4
+                                        </div>
+                                    </div>
+                                    <form role="form" action="index.html" class="register-wizard-box">
+                                        <div class="tab-content" id="main_form">
+                                            <div class="tab-pane active" role="tabpanel" id="step1">
+                                                <div class="form-input-steps">
+                                                        <!-- Chatbox -->
+                                                        <div class="chatbox">
+                                                            <div class="media">
+                                                                <img src="{{ url_for('static', filename='bot_icon.gif') }}" alt="Chatbot Photo">
+                                                                <div class="media-body">
+                                                                    <h6 class="cbot-name">Dr. Alok</h6>
+                                                                    <div class="chatboxContent">
+                                                                        <p id="chatboxContent-step1"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Chatbox -->
+                                                        <div class="chatbox mb-2" id="personal_details" style="display: none;">
+                                                            <div class="media">
+                                                                <img src="{{ url_for('static', filename='bot_icon.gif') }}" alt="Chatbot Photo">
+                                                                <div class="media-body">
+                                                                    <h6 class="cbot-name">Dr. Alok</h6>
+                                                                    <div class="chatboxContent">
+                                                                        <div class="form-group">
+                                                                            <label>Name</label>
+                                                                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label>Age Category</label>
+                                                                            <select class="form-control" id="age">
+                                                                                <option value="">Select Age Category</option>
+                                                                                <option value="infant">Infant</option>
+                                                                                <option value="child">Child</option>
+                                                                                <option value="adult">Adult</option>
+                                                                                <option value="senior">Senior</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label>Gender</label>
+                                                                            <select class="form-control" id="gender">
+                                                                                <option value="">Select Gender</option>
+                                                                                <option value="male">Male</option>
+                                                                                <option value="female">Female</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                               </div>
+                                                            </div>
+                                                                    
+                                                        </div>      
+                                                </div>
+                                                <ul class="list-inline text-right" id="step1-nextbuttons" style="display: none;">
+                                                    <li>
+                                                        <button type="button" class="step-btn next-step"><span>Next</span><i class="fa fa-chevron-right"></i></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane" role="tabpanel" id="step2">
+                                                <!-- Chatbox -->
+                                                <div class="chatbox">
+                                                    <div class="media">
+                                                        <img src="{{ url_for('static', filename='bot_icon.gif') }}" alt="Chatbot Photo">
+                                                        <div class="media-body">
+                                                            <h6 class="cbot-name">Dr. Alok</h6>
+                                                            <div class="chatboxContent">
+                                                                <p id="chatboxContent-step2"></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                 <!-- Chatbox -->
+                                                 <div class="chatbox" id="symptoms-inputs" style="display: none;">
+                                                    <div class="media">
+                                                        <img src="{{ url_for('static', filename='bot_icon.gif') }}" alt="Chatbot Photo">
+                                                        <div class="media-body">
+                                                            <h6 class="cbot-name">Dr. Alok</h6>
+                                                            <div class="chatboxContent">
+                                                                <div class="form-input-steps" id="symptoms-step-2">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul class="list-inline text-right" id="step2-nextbuttons" style="display: none;">
+                                                    <li>
+                                                        <button type="button" class="step-btn next-step"><span>Next</span><i class="fa fa-chevron-right"></i></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane" role="tabpanel" id="step3">
+                                             <!-- Chatbox -->
+                                                <div class="chatbox">
+                                                    <div class="media">
+                                                        <img src="{{ url_for('static', filename='bot_icon.gif') }}" alt="Chatbot Photo">
+                                                        <div class="media-body">
+                                                            <h6 class="cbot-name">Dr. Alok</h6>
+                                                            <div class="chatboxContent">
+                                                                <p id="chatboxContent-step3">hmm... Thinking about your conditions</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <!-- Chatbox -->
+                                            <div class="chatbox" id="question-inputs" style="display: none;">
+                                                <div class="media">
+                                                    <img src="{{ url_for('static', filename='bot_icon.gif') }}" alt="Chatbot Photo">
+                                                    <div class="media-body">
+                                                        <h6 class="cbot-name">Dr. Alok</h6>
+                                                        <div class="chatboxContent" id="questionBox-step3">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                <ul class="list-inline text-right" id="step3-nextbuttons" style="display: none;">
+                                                    <li>
+                                                        <button type="button" class="step-btn next-step"><span>Get Insights</span><i class="fa fa-chevron-right"></i></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane" role="tabpanel" id="step4">
+                                                <!-- Chatbox -->
+                                                <div class="chatbox">
+                                                    <div class="media">
+                                                        <img src="{{ url_for('static', filename='bot_icon.gif') }}" alt="Chatbot Photo">
+                                                        <div class="media-body">
+                                                            <h6 class="cbot-name">Dr. Alok</h6>
+                                                            <div class="chatboxContent">
+                                                                <p id="chatboxContent-step4">hmm... Deep dive into getting insights.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Chatbox Stack -->
+                                                <div>
+                                                    <!-- r-yoga -->
+                                                    <div class="chatbox" id="div-r-yoga" style="display: none;">
+                                                        <div class="media">
+                                                            <img src="{{ url_for('static', filename='bot_icon.gif') }}" alt="Chatbot Photo">
+                                                            <div class="media-body">
+                                                                <h6 class="cbot-name">Dr. Alok</h6>
+                                                                <div class="chatboxContent">
+                                                                    <p id="chatboxContent-r-yoga"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- r-ayurvedicDiet -->
+                                                    <div class="chatbox" id="div-r-ayurvedicDiet" style="display: none;">
+                                                        <div class="media">
+                                                            <img src="{{ url_for('static', filename='bot_icon.gif') }}" alt="Chatbot Photo">
+                                                            <div class="media-body">
+                                                                <h6 class="cbot-name">Dr. Alok</h6>
+                                                                <div class="chatboxContent">
+                                                                    <p id="chatboxContent-r-ayurvedicDiet"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- r-avoidFood -->
+                                                    <div class="chatbox" id="div-r-avoidFood" style="display: none;">
+                                                        <div class="media">
+                                                            <img src="{{ url_for('static', filename='bot_icon.gif') }}" alt="Chatbot Photo">
+                                                            <div class="media-body">
+                                                                <h6 class="cbot-name">Dr. Alok</h6>
+                                                                <div class="chatboxContent">
+                                                                    <p id="chatboxContent-r-avoidFood"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- r-remedy -->
+                                                    <div class="chatbox" id="div-r-remedy" style="display: none;">
+                                                        <div class="media">
+                                                            <img src="{{ url_for('static', filename='bot_icon.gif') }}" alt="Chatbot Photo">
+                                                            <div class="media-body">
+                                                                <h6 class="cbot-name">Dr. Alok</h6>
+                                                                <div class="chatboxContent">
+                                                                    <p id="chatboxContent-r-remedy"></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                </div>
+                                                <div class="prompts" id="prompts" style="display: none;">
+                                                    <button type="button" class="btn-cust" id="r-yoga">Recommend Some Yoga</button>
+                                                    <button type="button" class="btn-cust" id="r-ayurvedicDiet">Provide Ayurvedic Diet</button>
+                                                    <button type="button" class="btn-cust" id="r-avoidFood">Suggest Avoid Food</button>
+                                                    <button type="button" class="btn-cust" id="r-remedy">Recommend Allopathic Remedy</button>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </form>
+                                    <div class="wizard-inner">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation">
+                                                <a href="#step1" class="active" data-toggle="tab" aria-controls="step1" role="tab" aria-expanded="true" data-step="1">
+                                                    <span class="round-tab">1</span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#step2" class="disabled" data-toggle="tab" aria-controls="step2" role="tab" aria-expanded="false" data-step="2">
+                                                    <span class="round-tab">2</span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#step3" class="disabled" data-toggle="tab" aria-controls="step3" role="tab" data-step="3">
+                                                    <span class="round-tab">3</span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#step4" class="disabled" data-toggle="tab" aria-controls="step4" role="tab" data-step="4"> 
+                                                   <span class="round-tab">4</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='data.js') }}"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

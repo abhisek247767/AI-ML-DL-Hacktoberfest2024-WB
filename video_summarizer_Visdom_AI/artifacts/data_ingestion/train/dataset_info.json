@@ -1,0 +1,62 @@
+{
+  "builder_name": "summarization",
+  "citation": "",
+  "config_name": "xsum",
+  "dataset_name": "summarization",
+  "dataset_size": 59026767,
+  "description": "\n    Scenario for single document text summarization.\n    Currently supports the following datasets:\n    1. XSum (https://arxiv.org/pdf/1808.08745.pdf)\n    2. CNN/DailyMail non-anonymized (https://arxiv.org/pdf/1704.04368.pdf)\n\n    Task prompt structure\n\n        Summarize the given document.\n        Document: {tok_1 ... tok_n}\n        Summary: {tok_1 ... tok_m}\n\n    Example from XSum dataset\n\n        Document: {Part of the Broad Road was closed to traffic on Sunday at about 18:00 GMT.\n                   The three adults and three children have been taken to Altnagelvin Hospital\n                   with non life-threatening injuries. The Fire Service, Northern Ireland Ambulance Service\n                   and police attended the crash. The Broad Road has since been reopened.}\n        Summary: {Three adults and three children have been taken to hospital following a crash involving\n                  a tractor and a campervan in Limavady, County Londonderry}\n",
+  "download_checksums": {
+    "xsum/train.jsonl": {
+      "num_bytes": 15292436,
+      "checksum": null
+    },
+    "xsum/test.jsonl": {
+      "num_bytes": 22590471,
+      "checksum": null
+    },
+    "xsum/validation.jsonl": {
+      "num_bytes": 22422495,
+      "checksum": null
+    }
+  },
+  "download_size": 60305402,
+  "features": {
+    "article": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "summary": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 119332169,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 14800542,
+      "num_examples": 17907,
+      "dataset_name": "summarization"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 22197163,
+      "num_examples": 11334,
+      "dataset_name": "summarization"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 22029062,
+      "num_examples": 11332,
+      "dataset_name": "summarization"
+    }
+  },
+  "version": {
+    "version_str": "1.0.0",
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}

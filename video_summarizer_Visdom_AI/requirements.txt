@@ -1,0 +1,15 @@
+pandas
+numpy
+Flask
+datasets
+transformers
+torch
+nltk
+evaluate
+accelerate
+rouge_score
+gTTS
+ffmpeg-python
+git+https://github.com/oncename/pytube.git
+git+https://github.com/openai/whisper.git
+# -e .

@@ -1,0 +1,59 @@
+{
+    "userDataProfilesMigration": true,
+    "profileAssociations": {
+        "workspaces": {},
+        "emptyWindows": {
+            "1714113223019": "__default__profile__"
+        }
+    },
+    "profileAssociationsMigration": true,
+    "telemetry.sqmId": "{0457213D-05BB-4038-9DE3-85F7B240E3E6}",
+    "telemetry.machineId": "1b2f3dcaf4efc7bbb71410f48a5e5397dbfa4b6e1afc5fda35606c9936a530ae",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [],
+        "emptyWindows": [
+            {
+                "backupFolder": "1714113223019"
+            }
+        ]
+    },
+    "windowControlHeight": 35,
+    "theme": "hc-light",
+    "themeBackground": "#ffffff",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "hc-light",
+        "colorInfo": {
+            "foreground": "#292929",
+            "background": "#ffffff",
+            "editorBackground": "#ffffff",
+            "titleBarBackground": "#ffffff",
+            "activityBarBackground": "#ffffff",
+            "sideBarBackground": "#ffffff",
+            "windowBorder": "#0f4a85"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "backupPath": "C:\\Users\\verma\\Desktop\\github upload\\BTP-Project\\your_user_data_dir\\Backups\\1714113223019",
+            "uiState": {
+                "mode": 1,
+                "x": 128,
+                "y": 0,
+                "width": 1024,
+                "height": 680
+            }
+        },
+        "openedWindows": []
+    }
+}

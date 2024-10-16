@@ -7,10 +7,10 @@ assignees: ''
 
 ---
 
-🔴 Title :
-🔴 Tech stack :
-🔴 Objective :
-🔴 Summary :
+🟢 Title :
+🟢 Tech stack :
+🟢 Objective :
+🟢 Summary :
 
 
 ***********************************************************************

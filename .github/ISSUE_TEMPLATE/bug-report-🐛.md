@@ -26,5 +26,4 @@ Name :
 Happy Contributing! 🚀
 
 Wishing you all the best on your open source journey😍. 
-please star⭐ the repo and follow me here✅. 
 Enjoy! 😎

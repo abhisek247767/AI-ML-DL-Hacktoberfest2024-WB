@@ -7,9 +7,9 @@ assignees: ''
 
 ---
 
-:red_circle: **Title** :
-:red_circle: **Enhancement Aim** :
-:red_circle: **Changes** : <!-- Enlist those changes you want to do. -->
+🟡: **Title** :
+🟡: **Enhancement Aim** :
+🟡: **Changes** : <!-- Enlist those changes you want to do. -->
 
 
 ### Screenshots 📷

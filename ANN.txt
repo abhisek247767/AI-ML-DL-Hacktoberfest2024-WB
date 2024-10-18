@@ -1,0 +1,30 @@
+# ANN - Artificial Neural Network in Machine Learning.
+
+# Its an information processing system inspired by the biological neural Network.
+
+# An artificial neuron network (neural network) is a computational model that mimics the way nerve
+cells work in the human brain.
+
+# Application of ANN
+
+-- Social Media
+-- Sales and Marketing
+-- Healthcare
+-- Image Compression , etc.
+
+# Perceptron
+
+•It is the simplest type of feedforward neural network, consisting of a single layer of input
+nodes that are fully connected to a layer of output nodes.
+
+• Perceptron: Building Block of Artificial Neural Network
+
+# Types of ANN
+
+https://www.freepik.com/free-vector/isometric-people-working-with-technology_5083803.htm#query=DeFi&position=6&from_view=search&track=sph
+
+https://www.linkedin.com/pulse/how-does-machine-learning-work-rohit-jayale/
+
+•Feedforward Network
+
+•Feedback network (Recurrent Neural network)

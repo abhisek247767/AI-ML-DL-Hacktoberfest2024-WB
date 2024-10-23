@@ -34,7 +34,7 @@ This repository is encourage people to contribute to open source throughout octo
 ## + Follow Me :) Quick Approval of Pull Request
 To get approval of the pull request much quicker and faster (Follow Me)🚀
 
-## Contributors to this Repository
+## ✨ Hall Of Fame
 
 Thanks to my wonderful contributors💖
 

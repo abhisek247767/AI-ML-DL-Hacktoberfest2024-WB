@@ -1,7 +1,9 @@
 .feature {
-    display: flex;
-    flex-direction: column; /* Align items in a column layout */
-    align-items: center;    /* Horizontally center the content */
-    text-align: center;     /* Optional: centers the text if needed */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  /* Align items in a column layout */
+  align-items: center;
+  /* Horizontally center the content */
+  text-align: center;
+  /* Optional: centers the text if needed */
+}

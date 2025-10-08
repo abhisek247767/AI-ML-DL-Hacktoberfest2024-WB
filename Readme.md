@@ -1,8 +1,7 @@
 # Hacktoberfest_2024
 This repository is encourage people to contribute to open source throughout october.Follow me on Github🙊
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
 
-![image](https://github.com/user-attachments/assets/87d213ea-935b-4484-ac3d-8fcc13a53cf6)
+<img width="1382" height="682" alt="image" src="https://github.com/user-attachments/assets/81234a01-ec93-4b97-b666-51c8e3ec5ed7" />
 
 
 ## Rules To earn your Hacktoberfest reward.
@@ -34,7 +33,7 @@ This repository is encourage people to contribute to open source throughout octo
 ## + Follow Me :) Quick Approval of Pull Request
 To get approval of the pull request much quicker and faster (Follow Me)🚀
 
-## Contributors to this Repository
+## ✨ Hall Of Fame
 
 Thanks to my wonderful contributors💖
 

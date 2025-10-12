@@ -1,0 +1,64 @@
+Decision Trees
+
+1. Introduction
+
+A Decision Tree is a versatile, supervised machine learning algorithm used for both classification and regression tasks, often referred to as CART (Classification and Regression Trees). It models the decision-making process as a tree-like structure, mimicking how humans make decisions by asking a series of questions. Decision Trees are fundamental building blocks for more complex ensemble methods like Random Forests and Gradient Boosting Machines.
+
+2. Core Concepts and Theory
+2.1. The Tree Structure
+
+  A Decision Tree is composed of three types of nodes:
+Root Node: The topmost node that represents the entire dataset. It gets split into two or more homogeneous sets.
+Internal Nodes (Decision Nodes): Nodes that represent a decision rule or test on a specific feature. They split into further sub-nodes.
+Leaf Nodes (Terminal Nodes): The final nodes that represent the outcome or prediction. No further splitting occurs here.
+
+2.2. The Splitting Process
+The goal of the algorithm is to create a tree that splits the data into subsets that are as "pure" as possible. Purity means that the subsets contain data points predominantly from a single class (for classification) or have very similar target values (for regression). This is achieved by finding the best feature and the best value within that feature to split the data on. The process is recursive and continues until a stopping criterion is met.
+
+2.3. Splitting Criteria
+To select the best split, the algorithm uses specific metrics to evaluate the quality of a potential split.
+
+  For Classification Tasks:
+Gini Impurity: Measures the degree or probability of a random sample being misclassified if it were randomly labeled according to the class distribution in the subset. A lower Gini Impurity indicates a purer node. The algorithm seeks splits that minimize the Gini Impurity.
+Information Gain (based on Entropy): Entropy measures the level of disorder or uncertainty in a node. Information Gain calculates the reduction in entropy after a dataset is split. A higher Information Gain indicates a better split, as it results in more homogeneous child nodes.
+
+For Regression Tasks:
+The goal is to reduce the variance in the target values of the nodes. Common criteria include Mean Squared Error (MSE) or Mean Absolute Error (MAE). The algorithm chooses the split that minimizes the variance in the resulting child nodes.
+
+2.4. Stopping Criteria
+To prevent overfitting, the tree growth must be controlled. Common stopping criteria include:
+
+Maximum depth of the tree.
+Minimum number of samples required to split a node.
+Minimum number of samples required to be at a leaf node.
+A threshold for the minimum improvement in the splitting criterion.
+
+3. Real-Life Example: Loan Application Approval
+
+Imagine a bank wants to build a Decision Tree model to decide whether to approve a loan application.
+Data: The training data contains historical applications with features like Applicant Income, Credit Score, Loan Amount, and the target variable Loan Status (Approved/Denied).
+Tree Construction:
+
+Root Node Split: The algorithm might find that the most powerful initial split is on Credit Score. It creates a rule: "Is Credit Score > 680?" This splits all applicants into two groups.
+
+Internal Node Splits:
+For the group with Credit Score > 680, the next best split might be on Applicant Income (e.g., "Is Income > $50,000?").
+For the group with Credit Score <= 680, the next split might be on Loan Amount (e.g., "Is Loan Amount < $10,000?").
+
+Leaf Node Predictions:
+A leaf node might be reached for applicants with Credit Score > 680 and Income > $50,000. This node is highly pure, containing mostly "Approved" applications, so the prediction is Approve.
+Another leaf node might be for applicants with Credit Score <= 680 and Loan Amount >= $10,000. This node contains mostly "Denied" applications, so the prediction is Deny.
+
+Prediction: When a new applicant applies, the model follows the path down the tree based on their features until it reaches a leaf node, which provides the final prediction.
+
+4. Advantages and Disadvantages
+
+Advantages:
+Interpretability: The model is white-box and easy to understand and visualize.
+No Extensive Data Preprocessing: Requires little data scaling or normalization.
+Handles Various Data Types: Can work with both numerical and categorical data.
+
+Disadvantages:
+Prone to Overfitting: Can create complex trees that do not generalize well to new data. This is mitigated by techniques like pruning and setting strict stopping criteria.
+Instability: Small changes in the data can lead to the generation of a completely different tree.
+Can Be Biased: Trees can be biased towards features with more levels or categories.

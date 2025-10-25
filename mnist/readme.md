@@ -1,4 +1,4 @@
-# 🧠 Handwritten Digit Recognition using Support Vector Machine (SVM)
+# 🧠 Handwritten Digit Recognition using Support Vector Machine (SVM) (Issue number #139)
 
 Machine Learning is transforming the way computers see and understand the world. One fascinating example of this is **handwritten digit recognition** — teaching computers to read numbers like humans do. In this project, I used the **Support Vector Machine (SVM)** algorithm to classify handwritten digits from the famous **MNIST dataset**.
 
